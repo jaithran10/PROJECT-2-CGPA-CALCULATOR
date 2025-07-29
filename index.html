@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>CGPA CHECKER</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>CGPA CHECKER</h1>
+    <p>A tool for calculating GPA scores</p>   
+    <h2 id="cgpaDisplay">CGPA: 0.00</h2>
+    <h3>SEMESTER 1</h3>
+    
+    <div class="modal" id="gradeModal">
+  <div class="modal-content">
+    <h3>Select Your Grade</h3>
+    <label><input type="radio"  name="grade" value="S"> S</label><br>
+    <label><input type="radio"  name="grade" value="A+"> A+</label><br>
+    <label><input type="radio"  name="grade" value="A"> A</label><br>
+    <label><input type="radio"  name="grade" value="B+"> B+</label><br>
+    <label><input type="radio"  name="grade" value="B"> B</label><br>
+    <label><input type="radio"  name="grade" value="C+"> C+</label><br>
+    <label><input type="radio"  name="grade" value="C"> C</label><br>
+    <label><input type="radio"  name="grade" value="D+"> D+</label><br>
+    <label><input type="radio"  name="grade" value="D"> D</label><br>
+    <label><input type="radio"  name="grade" value="P"> P</label><br>
+    <label><input type="radio"  name="grade" value="F"> F</label><br>
+   <button class="close-btn" onclick="submitbutton()">Submit</button>
+  </div>
+</div>
+   <table border="2px solid black">
+  <tr>
+    <td>COURSES</td>
+    <td>CREDITS</td>
+    <td>GRADE</td>
+  </tr>
+  <tr>
+    <td><textarea>Subject </textarea></td>
+    <td><textarea>4</textarea></td>
+    <td><button onclick="openModal(this)">SELECT</button></td>
+  </tr>
+  <tr>
+    <td><textarea>Subject </textarea></td>
+    <td><textarea>4</textarea></td>
+    <td><button onclick="openModal(this)">SELECT</button></td>
+  </tr>
+  <tr>
+    <td><textarea>Subject </textarea></td>
+    <td><textarea>4</textarea></td>
+    <td><button onclick="openModal(this)">SELECT</button></td>
+  </tr>
+  <tr>
+    <td><textarea>Subject </textarea></td>
+    <td><textarea>4</textarea></td>
+    <td><button onclick="openModal(this)">SELECT</button></td>
+  </tr>
+  <tr>
+    <td><textarea>Subject </textarea></td>
+    <td><textarea>4</textarea></td>
+    <td><button onclick="openModal(this)">SELECT</button></td>
+  </tr>
+  <tr>
+    <td><textarea>Subject </textarea></td>
+    <td><textarea>4</textarea></td>
+    <td><button onclick="openModal(this)" >SELECT</button></td>
+  </tr>
+  <tr>
+    <td><textarea id="ta">Subject </textarea></td>
+    <td><textarea>4</textarea></td>
+    <td><button onclick="openModal(this)">SELECT</button></td>
+  </tr>
+  <tr>
+    <td>SGPA</td>
+    <td colspan="2">0.0</td>
+  </tr>
+</table>  
+    <div class="modal-footer">
+    <button onclick="deleteRow()" class="ADD" id="12">DEL SUBJECT</button>
+    <button onclick="createSubjectRow()" class="ADD" id="22">ADD SUBJECT</button>
+    <button onclick="createsemester()" class="ADD"   id="32">ADD SEMESTER</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
